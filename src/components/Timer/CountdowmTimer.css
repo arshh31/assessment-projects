@@ -1,0 +1,46 @@
+.bg-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100vh;
+    align-items:center;
+    background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-lg-bg.png');
+    background-size: cover;
+}
+
+.start-btn{
+    background-color: green;
+    padding: 8px 16px;
+    border-width: 0px;
+    border-radius: 6px;
+    color: white;
+    margin:5px;
+
+}
+
+.stop-btn{
+    background-color:red;
+    padding: 8px 16px;
+    border-width: 0px;
+    border-radius: 6px;
+    color: white;
+    margin:5px;
+}
+
+.resume-btn{
+    background-color:rgb(219, 219, 20);
+    padding: 8px 16px;
+    border-width: 0px;
+    border-radius: 6px;
+    color: white;
+    margin:5px;
+}
+
+.reset-btn{
+    background-color:orange;
+    padding: 8px 16px;
+    border-width: 0px;
+    border-radius: 6px;
+    color: white;
+    margin:5px;
+}

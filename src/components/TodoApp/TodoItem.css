@@ -1,0 +1,69 @@
+.taskItemContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    border-radius: 8px;
+    width:50vw;
+    height:50vh;
+
+}
+
+.listItem{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:12px 15px;
+    width:35vw;
+    background-color: #f9fafc;
+    border:1px solid #e4e7ed;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    cursor:pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.taskItemList{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    list-style-type: none;
+    text-align: left;
+}
+
+.task-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.priority-badge {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  color: white;
+  text-transform: capitalize;
+}
+
+.priority-badge.low {
+  background: #22c55e;
+}
+
+.priority-badge.medium {
+  background: #f59e0b;
+}
+
+.priority-badge.high {
+  background: #ef4444;
+}
+
+.delete-btn{
+    padding: 6px 18px;
+    border-radius: 5px;
+    border-width: 0px;
+    margin: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: red;
+    color: white;
+}
