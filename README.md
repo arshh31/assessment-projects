@@ -1,16 +1,136 @@
-# React + Vite
+# React Assignment – Assessment Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project contains the following features:
 
-Currently, two official plugins are available:
+* User Form with validation and password toggle
+* Advanced Countdown Timer system
+* Multi Progress Bar component
+* Todo App with filtering and priority support
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The project is built using **React + Vite**.
 
-## React Compiler
+---
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## Prerequisites
 
-## Expanding the ESLint configuration
+* **Node.js (v18 or above recommended)**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Check your Node version:
+
+```bash
+node -v
+```
+
+---
+
+## Steps to run the project locally
+
+### 1. Clone the repository
+
+```bash
+git clone <your-repository-url>
+cd my-assignment
+```
+
+---
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+---
+
+### 3. Start the development server
+
+```bash
+npm run dev
+```
+
+Open in browser:
+
+```
+http://localhost:5173
+```
+
+---
+
+## Project Structure 
+
+```
+src/
+ ├─ App.jsx
+ ├─ components/
+ │   ├─ Forms/
+ │   │    └─ UserForm.jsx
+ │   ├─ Timer/
+ │   │    └─ CountdownTimer.jsx
+ │   ├─ MultiProgressBar/
+ │   │    ├─ MultiProgressBar.jsx
+ │   │    └─ MultiProgressBarApp.jsx
+ │   └─ Todo/
+ │        ├─ TodoApp.jsx
+ │        ├─ TodoItem.jsx
+ │        └─ TodoApp.css
+```
+
+---
+
+## Assumptions Made
+
+### 1. Countdown Timer
+
+* Uses `setInterval` for countdown updates.
+* Timer state and remaining time are persisted using `localStorage`.
+* On page refresh, the timer resumes automatically if it was running.
+
+---
+
+### 2. Todo App
+
+* Each task supports a priority level (Low, Medium, High).
+* Tasks can be filtered using:
+
+  * All
+  * Active
+  * Completed
+* Filtering is done on the client side using React state.
+* Each task can be marked as completed.
+* Priority is stored along with the task object.
+
+---
+
+### 3. Form handling
+
+* All fields are mandatory.
+* Email validation is done using a simple regular expression.
+* Inline error messages are displayed.
+* The form is cleared after successful submission.
+
+---
+
+### 4. Multi Progress Bar
+
+* Progress value is limited between 0 and 100.
+* Auto increment is used only for demo purposes.
+
+---
+
+##  Limitations / Trade-offs
+
+* No backend or database integration.
+* Todo data is persisted after page refresh.
+* Timer accuracy depends on browser scheduling.
+* UI is intentionally simple and lightweight.
+
+---
+
+##  Start Command
+
+```bash
+npm run dev
+```
+
+---
+
